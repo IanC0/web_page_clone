@@ -3,6 +3,14 @@ body {
    
 }
 /* ##### GLOBAL ##### */
+body {
+    font-family: 'Open Sans', sans-serif;
+} 
+a, a:hover {
+    text-decoration: none;
+    color: #a93b25;
+}
+
 .cta {
     background-color: rgba(231,121,43,255); 
     color: white;
@@ -71,3 +79,147 @@ nav ul {
         margin: 3px;
     }
   }
+  /* ##### hero banner ##### */
+  #covid_banner {
+      background-color: rgb(240, 185, 154, 0.4);
+      text-align: center;
+      font-size: .8rem;
+      padding: .5px 0 .5px 0;
+  }
+  #bannerMain {
+    background-image: url("images/bodyBannerBackgroun.png");
+    position: relative;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 725px;
+  }
+  #bannerMainText {
+      padding-top: 20vh;
+      padding-left: 5vw;
+      margin: 0;
+  }
+  h1 {
+      margin: 0;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 80px;
+      font-weight: 700;
+      max-width: 55vw;
+  }
+  h2 {
+    margin: 0;
+    font-family: inherit;
+    font-size: 25px;
+    font-weight: 100;
+    max-width: 40vw;
+    
+  }
+  #bannerMainTextAndButton {
+      max-width: 40vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-weight: 700;
+  }
+  #bannerMainTextAndButton button {
+      display: flex;
+      align-items: center;
+      font-size: 1em;
+      padding-top: 5px;
+      padding-bottom: 5px;
+  }
+  #hero_banner {
+      position:absolute;
+      z-index: -1;
+      left: 50%;
+      top: 15%;
+      height: auto;
+      width: 35vw;
+      border-radius: 50%;
+      box-shadow: 00px 00px 100px rgb(248, 246, 246);
+      opacity: .9;
+  }
+  #secondary_banner_img {
+    position:absolute;
+    z-index: -1;
+    left: 60%;
+    top: 38%;
+    height: auto;
+    width: 30vw;
+    border-radius: 50%;
+  }
+
+  @media all and (max-width: 1000px) {
+      #bannerMain {
+          height: 650px;
+      }
+    #bannerMainText {
+        padding-top: 45%;
+    }
+    #heroBannerContents {
+        display: flex;
+        flex-direction: column;
+    }
+    #bannerMainText {
+        order: 1;
+    }
+    h1 {
+        font-size: 50px;
+        max-width: 90vw;
+    }
+    h2 {
+      max-width: 90vw;
+    }
+    #bannerMainTextAndButton {
+        max-width: 60vw;
+    }
+    #hero_banner, #secondary_banner_img {
+        margin: auto;
+        left:0;
+        right:0;
+        margin-top: -9%;
+    }
+    #secondary_banner_img {
+        margin-top: -10%;
+    }
+  } 
+  @media all and (max-width: 850px) {
+    #secondary_banner_img {
+        margin-top: -15%;
+    }
+  }
+
+
+  /* Smallest Screen */
+ @media all and (max-width: 600px){
+        #bannerMain {
+            overflow: hidden;
+        }
+        #hero_banner  {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        margin-top: -40%;
+        height: auto;
+        width: 120%;
+        left: -10%;
+    }
+    #secondary_banner_img {
+        display: none;
+    }
+    #bannerMainText {
+        padding: 0 3px 0 10px !important;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 15px;
+    }
+    #bannerMainTextAndButton {
+        max-width: 80vw;
+    }
+}
