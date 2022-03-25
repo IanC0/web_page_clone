@@ -144,7 +144,6 @@ nav ul {
  #bannerMain h2 {
     font-size: 20px;
     font-weight: 100;
-    
 }
   #bannerMainTextAndButton {
       max-width: 40vw;
@@ -188,14 +187,16 @@ nav ul {
   @media all and (min-width: 1001px) {
       #heroBannerContents, #news {
         padding-left: 15vw;
-        
       }
   }
 
   @media all and (max-width: 1000px) {
     #heroBannerContents, #news {
-        padding-left: 10vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
       }
+
+      #bannerMainText {padding-right:0vw}
     #bannerMain {
           height: 640px;
       }
@@ -204,7 +205,7 @@ nav ul {
 
     }
     #bannerMain h2 {
-        font-size: 25px;
+        font-size: 22px;
         
     }
     #heroBannerContents {
@@ -215,7 +216,10 @@ nav ul {
         order: 1;
     }
     #bannerMainTextAndButton {
-        max-width: 60vw;
+        padding-top: 2%;
+        max-width: 60%;
+        display: flex;
+        justify-content: space-between;
     }
     #hero_banner, #secondary_banner_img {
         margin: auto;
@@ -248,6 +252,13 @@ nav ul {
             overflow: hidden;
             height: 650px;
         }
+        #bannerMainText {
+            padding: 5px
+        }
+        #heroBannerContents {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
         #bannerMain h2 {
             font-size: 20px;
         }
@@ -257,9 +268,10 @@ nav ul {
         overflow: hidden;
         margin-top: -50%;
         height: auto;
-        width: 130%;
-        left: -17%;
+        width: 120%;
+        left: -10%;
         max-width: 700px;
+        padding-left: 0;
     }
     #secondary_banner_img {
         display: none;
@@ -270,9 +282,7 @@ nav ul {
     #bannerMainTextAndButton {
         max-width: 80vw;
     }
-    #heroBannerContents {
-        padding: 5px;
-    }
+   
 }
 
 /* ##### NEWS #### */
@@ -386,7 +396,7 @@ padding-left: 5px;
         flex-basis: 30%;
     }
 }
-@media all and (max-width: 395px) {
+@media all and (max-width: 410px) {
     #news_pods_flex {
         margin-top: 5vh;
         box-sizing: border-box;
@@ -395,11 +405,11 @@ padding-left: 5px;
         flex-flow: nowrap column;
         justify-content: flex-start;
     }
-   
-
     }
     .news_pod > *, .news_pod_wide > * {
         width: 100%;
     } 
 
+footer {
+    background-color: #26262b;
 }
