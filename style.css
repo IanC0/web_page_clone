@@ -232,6 +232,8 @@ nav ul {
         margin-top: -10%;
     }
   } 
+
+
    
   @media all and (max-width: 850px) {
     #secondary_banner_img {
@@ -245,6 +247,12 @@ nav ul {
     }
   }
 
+  @media all and (max-width: 900px) {
+      #bannerMain {
+          height: 575px;
+      }
+  }
+  
 
   /* Smallest Screen */
  @media all and (max-width: 600px){
@@ -253,7 +261,8 @@ nav ul {
             height: 650px;
         }
         #bannerMainText {
-            padding: 5px
+            padding: 5px;
+            padding-left: 10px;
         }
         #heroBannerContents {
             padding-left: 0px;
@@ -277,12 +286,18 @@ nav ul {
         display: none;
     }
     #bannerMainText {
-        padding: 0px 2px 0 2px ;
+        padding: 0px 2px 0 15px ;
     }
     #bannerMainTextAndButton {
         max-width: 80vw;
     }
    
+}
+
+@media all and (max-width: 450px) {
+    #bannerMain {
+        height: 575px;
+    }
 }
 
 /* ##### NEWS #### */
@@ -380,11 +395,20 @@ padding-left: 5px;
     #news_pods_flex {
         padding-right: 5px;
     }
+    #news {
+    
+        padding-right: 10px;
+    }
 }
 
 @media all and (max-width: 600px) {
     #news {
         padding-left: 10px;
+        padding-right: 10px;
+    }
+    #news_pods_flex {
+        padding-left: 8px;
+        padding-right: 0px;
     }
     .news_pod_heading {
         flex-basis: 33%;
